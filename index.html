@@ -2,57 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nft-Card</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-  <div class="card">
-    <div class="container">
-      <div class="header">
-        
-        <img class="eqm" src="./images/image-equilibrium.jpg" alt="">
-        
-        <h3 class="title">
-          Equilibrium #3429
-        </h3>
-        <p class="info">
-          Our Equilibrium collection promotes balance and calm
-        </p>
-        <div class="pricing_and_time">
-          <div class="price">
-            <img class = "eth-icon" src="./images/icon-ethereum.svg" alt="">
-            <span class="amt">0.041ETH</span>
-          </div>
-          <div class="time">
-            <img src="./images/icon-clock.svg" class="clock" alt="">
-            <span class="time_left">
-              3 days left
-            </span>
-
-          </div>
+  <main>
+    <div class="nft_card">
+     <div class="img-container"> 
+      <img class="eqm" src="./images/image-equilibrium.jpg" alt="Equilibrium-img">
+      <div class="overlay"></div>
+      <img src="./images/icon-view.svg" alt="" class="eye">
+    </div>
+        <h2>Equilibrium #3429</h2>
+      <p class="info">Our Equilibrium collection promotes balance and calm</p>
+      <div class="pricing">
+        <div class="price">
+          <img class="eth-icon" src="./images/icon-ethereum.svg" alt="eth_icon">
+          <span class="cost">0.041 ETH</span>
+        </div>
+        <div class="time_left">
+          <img src="./images/icon-clock.svg" alt="clock">
+          <span class="time">3 days left</span>
         </div>
         
       </div>
-      <span class="line"></span>
-      <div class="made_by">
-        <img  class= "person"src="./images/image-avatar.png" alt="">
-        <span class="creator_info">Creation of <span class="creator">Jules Wyvern</span></span>
-      </div>
+      <div class="line"></div>
+        <div class="creator">
+          <img src="./images/image-avatar.png" alt="person">
+          <span class="created_by">Creation of <span class="creator_name">Jules Wyvern</span></span>
+
+        </div>
     </div>
-  </div>
-
-
-
+  </main>
 </body>
 </html>
